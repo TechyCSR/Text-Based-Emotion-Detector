@@ -1,0 +1,109 @@
+<!-- Code by @TechyCSR -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="static/js/mywebscript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="center-heading">Text Emotion Detection (Using NLP)</h1> 
+                <hr>
+                <p class="website-description">
+                    This platform uses advanced Natural Language Processing (NLP) techniques to perform sentiment analysis on text! 🌟 
+                    <br>It calculates an overall sentiment score <b>(positive, negative, neutral)</b> for the entire text and highlights specific entities within the text that impact the sentiment. 
+                    These entities include people, organizations, locations, products, and more.Plus, the platform provides insights into how each entity contributes to the sentiment, giving you a comprehensive understanding of your text's emotional tone! 🌍
+
+
+
+
+
+
+                   
+                </p>
+                <hr>
+                <div class="mb-3">
+                    <label class="form-label custom-label" for="textToAnalyze">Please enter the text to be analyzed</label>
+                    <textarea class="form-control" id="textToAnalyze" rows="4" placeholder="Enter text here...."></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button onclick="RunSentimentAnalysis()" class="btn btn-secondary" id="sentimentButton">
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span class="loading-text">Loading...</span>    
+                        <span class="default-text">Run Sentiment Analysis</span>
+                    </button>
+                </div>
+
+                <div class="mb-3">
+                    <h2 class="form-label custom-label">Result of Emotion Detection</h2>
+                </div>
+
+                <div id="system_response"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showLoading() {
+            document.querySelector('.spinner-border').style.display = 'inline-block';
+            document.querySelector('.loading-text').style.display = 'inline-block';
+            document.querySelector('.default-text').style.display = 'none';
+        }
+
+        function hideLoading() {
+            document.querySelector('.spinner-border').style.display = 'none';
+            document.querySelector('.loading-text').style.display = 'none';
+            document.querySelector('.default-text').style.display = 'inline';
+        }
+    </script>
+
+<footer style="
+background-color: #f8f9fa; /* Light grey background */
+padding: 10px; /* Padding around the footer */
+border-top: 2px solid #dee2e6; /* Light grey border on top */
+border-radius: 25px 25px 0 0; /* Rounded corners on top */
+width: 100%; /* Full width of the page */
+position: fixed; /* Fixed position at the bottom */
+bottom: 0;
+left: 0;
+right: 0;
+display: flex; 
+justify-content: center;
+align-items: center;
+">
+<div>
+<p style="
+        margin: 0;
+        color: #05090e; 
+        font-size: 15px;
+    ">
+    &copy; 2024 Text Emotion Detection. All rights reserved.
+</p>
+<p style="
+        margin: 0; 
+        color: #050a0e; 
+        font-size: 14px;
+    ">
+    <a href="https://projects.techycsr.tech" style="
+        color: #007bff; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; 
+    ">@TechyCSR</a>
+</p>
+</div>
+</footer>
+
+</body>
+</html>
