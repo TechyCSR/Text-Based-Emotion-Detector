@@ -2,15 +2,14 @@
     "version":2,
     "builds": [
         {
-            "src":"./app.py",
-            "use": "@vercel/python",
-            "config":{"runtime":"python3.8"}
+            "src":"app.py",
+            "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src":"/(.*)",
-            "dest":"/"
+            "dest":"app.py"
         }
     ]
 }
