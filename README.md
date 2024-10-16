@@ -60,7 +60,7 @@ Access the app in your web browser at [http://localhost:5000](http://localhost:5
 
 If you have questions, feedback, or need assistance, please don't hesitate to reach out:
 
-- **💼 Name**: [CHANDAN SINGH](https://projects.techycsr.tech)
+- **💼 Name**: [CHANDAN SINGH](https://projects.techycsr.me)
 - **📧 Email**: [csr.info.in@gmail.com](mailto:csr.info.in@gmail.com)
 - **💼 LinkedIn**: [@TechyCSR](https://www.linkedin.com/in/TechyCSR)
 - **🐦 Twitter**: [@TechyCSR](https://twitter.com/TechyCSR)
